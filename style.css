@@ -1,0 +1,217 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f4fc;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #7079ca;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                url('');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  
+  header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #7e78cc;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .espacio-header {
+    height: 190px;
+  }
+  
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  
+  .producto {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 220px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05);
+  }
+  
+  .producto img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+  }
+  
+  .producto h2 {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+  }
+  
+  .producto p {
+    font-size: 1.1rem;
+    color: #3e3c98;
+  }
+  
+  .producto button {
+    background-color: #686ec8;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .producto button:hover {
+    background-color: #471a70;
+    transform: scale(1.05);
+  }
+  
+  .producto button:active {
+    transform: scale(0.95);
+  }
+  
+  .carrito {
+    background-color: #e6e4fc;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .carrito h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carrito ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .carrito li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Botón Finalizar Compra */
+  .carrito button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #7c6edb;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .carrito button:hover {
+    background-color: #5a4bc0;
+    transform: scale(1.05);
+  }
+  
+  .carrito button:active {
+    transform: scale(0.95);
+  }
+  
+  .contacto {
+    background-color: #e5e5f5;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #897bd6;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .productos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .producto {
+      width: 90%;
+    }
+  
+    .carrito {
+      margin: 1rem;
+    }
+  }
+  .carrito ul li button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .carrito ul li button:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+  }
+  
+  
+  
